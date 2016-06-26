@@ -13,10 +13,9 @@ public class _01DataTypeIntro {
         char c1 = 'a';
         char c2 = '\u2432';
         char c3 = 123;
-
         boolean br = true;
         boolean br2 = false;
-
+        double d = 3.14;
         System.out.println(b1);
 
     }
