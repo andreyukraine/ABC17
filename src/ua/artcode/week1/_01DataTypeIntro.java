@@ -1,5 +1,7 @@
 package ua.artcode.week1;
 
+import java.util.Scanner;
+
 /**
  * Created by IT on 26.06.2016.
  */
@@ -23,7 +25,7 @@ public class _01DataTypeIntro {
         // 2^32 степень
         // числа от -2,147,483,648 до 2,147,483,647
 
-        long l1 = 2343232322l;
+        long l1 = 2343232322L;
         // 8 байта памяти
         // 2^64 степень
         // числа от -9,223,372,036,854,775,808 до 9,223,372,036,854,775,807
@@ -55,7 +57,7 @@ public class _01DataTypeIntro {
         //-------------------------------------------------------------
         // 1 бит
         // числа 0 или 1
-        boolean br = true;
+        boolean br = false;
         boolean br2 = false;
 
         //Переводим byte в short
@@ -68,5 +70,21 @@ public class _01DataTypeIntro {
         // s1 = 30000
         byte newbyte = (byte) s1;
         System.out.println("View short " + newbyte);
+
+
+        //Ловим значения введеные с клавиатуры и выводим на экран
+//        Scanner scanner = new Scanner(System.in);
+//        String text = scanner.nextLine();
+//        System.out.println(text);
+
+        //Условия IF ELSE
+        if ((br == true) || (br2= false)){
+            System.out.println("Истина");
+        }else{
+            System.out.println("Ложь");
+        }
+
+
+
     }
 }
