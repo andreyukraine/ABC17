@@ -15,6 +15,14 @@ public class Task4_7 {
         int number1 = scanner.nextInt();
         int number2 = scanner.nextInt();
 
+        if (number1 % number2 == 0){
+            System.out.println("true");
+            System.out.println((double) number1 / number2);
+        }else{
+            System.out.println("false");
+            System.out.println((double) number1 / number2);
+        }
+
 
     }
 }
