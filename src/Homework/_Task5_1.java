@@ -7,7 +7,7 @@ import static java.lang.String.valueOf;
 /**
  * Created by IT on 27.06.2016.
  */
-public class Task5_1 {
+public class _Task5_1 {
     //5.1. Перевод с числа с десятичной системы счисления в двоичную, и наоборот. Пользователь сам вводит число
 
     public static void main(String[] args) {

@@ -3,7 +3,13 @@ package Homework;
 /**
  * Created by IT on 02.07.2016.
  */
-public class Task_add_4 {
+public class _Task_add_4 {
     // 4) Известны две скорости, одна в километрах в час, другая в метрах в секун-
     // ду. Какая из них больше?
+
+
+
+
+
+
 }
