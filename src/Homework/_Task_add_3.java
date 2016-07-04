@@ -11,7 +11,9 @@ public class _Task_add_3 {
 
 
     public static void main(String[] args) {
-        int num = 122;
+
+        int ch = 123;
+
 
 
     }
