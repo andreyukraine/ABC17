@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by IT on 02.07.2016.
  */
-public class _Task_add_11 {
+public class Task_add_11 {
 
     // 11) Написать программу, которая при вводе числа в диапазоне от 1 до 99
     // добавляет к нему слово "копейка" в правильной форме. Например, 1
@@ -18,15 +18,23 @@ public class _Task_add_11 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
+        System.out.println("Введите число от 1-99: ");
+        int money = scanner.nextInt();
+        String str;
 
-        if (number == 1 ){
-            System.out.println(number + " копейка");
-        }else if (number % 2 == 0){
-            System.out.println(number + " копеек");
-        }else{
-            System.out.println(number + " копейки");
+        int virtual_money = money;
+        for (int i = 0; virtual_money >=10 ; i++) {
+            virtual_money -= 10;
         }
+        switch (virtual_money){
+            case 1 : str = "копейка"; break;
+            case 2 : str = "копейки"; break;
+            case 3 : str = "копейки"; break;
+            case 4 : str = "копейки"; break;
+            default: str = "копеек"; break;
+        }
+
+        System.out.println(money + " " + str);
 
     }
 }

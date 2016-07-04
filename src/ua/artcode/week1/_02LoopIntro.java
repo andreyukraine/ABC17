@@ -85,7 +85,7 @@ public class _02LoopIntro {
 
             int j = 0;
             while (j < mass2.length){
-                mass2[]
+                System.out.println(mass2[j]);
             }
 
 
