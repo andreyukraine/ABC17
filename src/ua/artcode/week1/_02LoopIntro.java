@@ -67,21 +67,26 @@ public class _02LoopIntro {
     //        }
 
         // Заполнить массив пользователь указывает пользователь массива и початкове значення
-    //        Scanner scanner = new Scanner(System.in);
-    //        int offset = scanner.nextInt();
-    //        int length = scanner.nextInt();
-    //
-    //        int[] mass2 = new int[offset];
-    //        int p = 0;
-    //        while (offset < length){
-    //            mass2[p] = offset;
-    //            p++;
-    //            offset++;
-    //        }
-    //
-    //        for (int i = 0; i < mass2.length ; i++) {
-    //            System.out.print(mass2[i]);
-    //        }
+            Scanner scanner = new Scanner(System.in);
+            int offset = scanner.nextInt();
+            int length = scanner.nextInt();
+
+            int[] mass2 = new int[offset];
+            int p = 0;
+            while (offset < length){
+                mass2[p] = offset;
+                p++;
+                offset++;
+            }
+
+            for (int i = 0; i < mass2.length; i++) {
+                System.out.print(mass2[i] + " ");
+            }
+
+            int j = 0;
+            while (j < mass2.length){
+                mass2[]
+            }
 
 
     }
