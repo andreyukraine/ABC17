@@ -20,9 +20,9 @@ public class _Task_add_11 {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
 
-        if (number == 1){
+        if (number == 1 ){
             System.out.println(number + " копейка");
-        }else if (number % 2 !=0){
+        }else if (number % 2 == 0){
             System.out.println(number + " копеек");
         }else{
             System.out.println(number + " копейки");
