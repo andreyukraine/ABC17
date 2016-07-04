@@ -17,11 +17,11 @@ public class Task_add_7 {
         if (mesiac == 1 || mesiac == 2 || mesiac == 12){
             System.out.println("Winter");
         }else if (mesiac >= 3 & mesiac < 6){
-            System.out.println("Vesna");
+            System.out.println("Spring");
         }else if (mesiac >= 6 & mesiac < 9){
             System.out.println("Summer");
         }else if (mesiac >= 9 & mesiac <= 11){
-            System.out.println("Ocen");
+            System.out.println("Autumn");
         }else{
             System.out.println("error");
         }
