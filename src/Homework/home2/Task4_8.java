@@ -6,10 +6,13 @@ import ua.artcode.week1.ArrayUtils;
  * Created by IT on 05.07.2016.
  */
 public class Task4_8 {
-//    8) Заполнить массив случайными значениями. На четных индексах парные значения, на нечетных непарные
+    //8) Заполнить массив случайными значениями. На четных индексах парные значения, на нечетных непарные
 public static void main(String[] args) {
 
+    //Создаем массив
     int[] mass = new int[10];
+
+    //Наполняем массив согласно условиям задания
     for (int i = 0; i < mass.length ; i++) {
         int random = (int)(Math.random() * 100);
         if (i % 2 == 0){
@@ -23,6 +26,7 @@ public static void main(String[] args) {
         }
     }
 
+    // Вывводим массив
     ArrayUtils.printArray(mass);
 }
 }
