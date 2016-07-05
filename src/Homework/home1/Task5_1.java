@@ -11,6 +11,10 @@ public class Task5_1 {
     //5.1. Перевод с числа с десятичной системы счисления в двоичную, и наоборот. Пользователь сам вводит число
 
     public static void main(String[] args) {
+        Gen2for10();
+    }
+
+    public static void Gen2for10() {
         Scanner scanner = new Scanner(System.in);
         int revers = 0;
         String chislo2 = "";

@@ -11,7 +11,12 @@ public class Task5_3 {
     //        5889  -   2
     //        8888  -   4
     //        989990  - 1
+
     public static void main(String[] args) {
+        repetitionNumber();
+    }
+
+    public static void repetitionNumber() {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
 

@@ -8,6 +8,10 @@ import java.util.Scanner;
 public class Task5_2 {
     // 5.2. Вычислить факториал числа.
     public static void main(String[] args) {
+        factorial();
+    }
+
+    public static void factorial() {
 
 
         Scanner scanner = new Scanner(System.in);
