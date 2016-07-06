@@ -15,17 +15,17 @@ public class Task8 {
 
     public static void main(String[] args) {
 
+
+
         //Геннерируем массив
-        int number = (int)(25 + Math.random() * (125 - 25));
-        System.out.println(number);
+        // Загаданное сгенерированое число
+        int gen_number = (int)(25 + Math.random() * (125 - 25));
+        System.out.println(gen_number);
 
         Scanner scanner = new Scanner(System.in);
 
         //Введеное число пользователем
-        int input_number = 0;
-
-        //Загаданное сгенерированое число
-        int ansver = number;
+        int input_number;
 
         //Количество попыток
         int try_input = 5;
@@ -34,6 +34,7 @@ public class Task8 {
         int i = 1;
 
         System.out.println("Угадайте число, у Вас п'ять попыток!!!!!");
+
         do {
 
             if (i <= try_input) {
@@ -41,18 +42,15 @@ public class Task8 {
                 System.out.println("Введите число от 25 - 125");
                 input_number = scanner.nextInt();
 
-                if (input_number == ansver) {
+                if (input_number == gen_number) {
+
                     System.out.println("Ура!!!!! Вы угадали");
                     break;
+
                     } else {
                     if (i <= 4) {
-                        if (input_number > ansver) {
-                            System.out.println("Число больше чем загаданое");
-                        } else {
-                            System.out.println("Число меньше чем загаданое");
-                        }
+                        System.out.println(input_number > gen_number ? "Число больше чем загаданое" : "Число меньше чем загаданое");
                         System.out.println("Попробуйте еще раз! У Вас еще " + (try_input-i) + " попыток" );
-                        System.out.println();
                     }
                         ++i;
                     }
