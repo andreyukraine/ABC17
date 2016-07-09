@@ -43,10 +43,10 @@ public class Task8 {
                     break;
 
                     } else {
-                    if (i <= 4) {
-                        System.out.println(input_number > gen_number ? "Число больше чем загаданое" : "Число меньше чем загаданое");
-                        System.out.println("Попробуйте еще раз! У Вас еще " + (5-i) + " попыток" );
-                    }
+                        if (i <= 4) {
+                            System.out.println(input_number > gen_number ? "Число больше чем загаданое" : "Число меньше чем загаданое");
+                            System.out.println("Попробуйте еще раз! У Вас еще " + (5-i) + " попыток" );
+                        }
                         ++i;
                     }
 
