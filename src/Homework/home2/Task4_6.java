@@ -21,23 +21,23 @@ public class Task4_6 {
         int left_sum = 0;
         int right_sum = 0;
 
-        int s = 0;
-        int w = 0;
+        int step1 = 0;
+        int step2 = 0;
 
 
         for (int i = 0; i < arrays.length;) {
 
             if (i < arrays.length / 2){
 
-                left_arr[s] = arrays[i];
-                s++;
+                left_arr[step1] = arrays[i];
+                step1++;
                 left_sum += arrays[i];
                 average_left = left_sum / (arrays.length / 2);
 
             }else{
 
-                right_arr[w] = arrays[i];
-                w++;
+                right_arr[step2] = arrays[i];
+                step2++;
                 right_sum += arrays[i];
                 average_right = right_sum / (arrays.length / 2);
 

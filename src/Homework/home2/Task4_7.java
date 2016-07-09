@@ -23,11 +23,8 @@ public static void main(String[] args) {
     ArrayUtils.printArray(array2);
 
     // Через перебор суммируем массивы
-    for (int i = 0; i < array1.length ;) {
-        for (int j = 0; j < array2.length; j++) {
-            total += array1[i] + array2[j];
-            i++;
-        }
+    for (int i = 0; i < array1.length; i++) {
+            total += array1[i] + array2[i];
     }
 
     //Ввыводим сумму массивов

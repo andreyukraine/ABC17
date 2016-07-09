@@ -8,11 +8,11 @@ import ua.artcode.week1.ArrayUtils;
 public class Task7_4 {
 //    7.4 Сдвинуть массив на заданное количество позиций // {1,2,3,4,5} -> 2 = {4,5,1,2,3}; {1,2,3,4,5} -> 3 = {3,4,5,1,2}
 //    Количество позиций и массив указывает пользователь
-public static void main(String[] args) {
-    int[] mass = ArrayUtils.createAndFillRandomArray(5, 0, 10);
-    ArrayUtils.printArray(mass);
-    ArrayUtils.printArray(moveRight(mass, 3));
-}
+    public static void main(String[] args) {
+        int[] mass = ArrayUtils.createAndFillRandomArray(5, 0, 10);
+        ArrayUtils.printArray(mass);
+        ArrayUtils.printArray(moveRight(mass, 3));
+    }
     public static int[] moveRight(int[] array, int positions) {
 
         //Получаем длину массива
