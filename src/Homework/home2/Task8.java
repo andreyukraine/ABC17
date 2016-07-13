@@ -17,7 +17,7 @@ public class Task8 {
 
         //Геннерируем массив
         // Загаданное сгенерированое число
-        int gen_number = (int)(25 + Math.random() * (125 - 25));
+        int gen_number = (int) (25 + Math.random() * (125 - 25));
         System.out.println(gen_number);
 
         Scanner scanner = new Scanner(System.in);
@@ -42,20 +42,22 @@ public class Task8 {
                     System.out.println("Ура!!!!! Вы угадали");
                     break;
 
-                    } else {
-                        if (i <= 4) {
-                            System.out.println(input_number > gen_number ? "Число больше чем загаданое" : "Число меньше чем загаданое");
-                            System.out.println("Попробуйте еще раз! У Вас еще " + (5-i) + " попыток" );
-                        }
-                        ++i;
+                } else {
+
+                    if (i <= 4) {
+                        System.out.println(input_number > gen_number ? "Число больше чем загаданое" : "Число меньше чем загаданое");
+                        System.out.println("Попробуйте еще раз! У Вас еще " + (5 - i) + " попыток");
                     }
 
-            }else{
+                    ++i;
+                }
+
+            } else {
                 System.out.println("У Вас больше нет попыток для ввода числа");
                 break;
             }
 
-        }while (input_number !=0);
+        } while (input_number != 0);
 
     }
 

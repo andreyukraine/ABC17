@@ -1,5 +1,7 @@
 package ua.artcode.week1;
 
+import ua.artcode.week3.ContactUtils;
+
 /**
  * Created by IT on 04.07.2016.
  */
@@ -12,6 +14,10 @@ public class ArrayUtils {
         }
         System.out.println();
     }
+
+
+
+
     //Выводим массива String[]
     public static void printArray(String[] array){
         //logic
@@ -41,9 +47,13 @@ public class ArrayUtils {
     public static int[] createAndFillRandomArray(int size, int min, int max){
         int[] array = new int[size];
         for (int i = 0; i < size; i++) {
-            array[i] = (int)(min + Math.random() * (max - min));
+            array[i] = generateRandomNum(min, max);
         }
         return array;
+    }
+
+    public static int generateRandomNum(int min, int max) {
+        return (int)(min + Math.random() * (max - min));
     }
 
     public static int[] SortArray(int[] array){
@@ -60,5 +70,8 @@ public class ArrayUtils {
             }
         }
         return array;
+    }
+
+    private static class Contact {
     }
 }
