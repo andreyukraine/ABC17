@@ -15,24 +15,38 @@ public class Task3_12 {
         //    - генерировать случайный пароль используя символы: a-z A-Z 0-9
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Введите пароль: ");
-            String password = scanner.nextLine();
 
-            if (PasswordUlills.lengthPassword(password) == true){
-                System.out.println("длинна пароля от 8 до 20 символов");
-            }
-            if (PasswordUlills.toUperCase(password) == true){
-                System.out.println("в пароле есть маленькие так и большие буквы");
-            }
-            if (PasswordUlills.numberPassword(password) == true){
-                System.out.println("в пароле есть цифры");
-            }
-            if (PasswordUlills.toContaineWord(password) == true){
-                System.out.println("пароль не содержать слов 'password', 'pass', 'gfhjkm'");
-            }else{
-                System.out.println("+");
-            }
+            int count = 0;
+                do {
 
+                    System.out.println("Введите пароль: ");
+                    String password = scanner.nextLine();
+
+                    if (PasswordUlills.lengthPassword(password) == false){
+                        System.out.println("Длина пароля должна быть от 8 до 20 символов");
+                    }
+                    if (PasswordUlills.toUperCase(password) == false){
+                        System.out.println("В пароле нет маленьких и больших буквы");
+                    }
+                    if (PasswordUlills.numberPassword(password) == false){
+                        System.out.println("В пароле нет цифры");
+                    }
+                    if (PasswordUlills.toContaineWord(password) == false){
+                        System.out.println("Пароль содержать слова 'password', 'pass', 'gfhjkm'");
+                    }
+
+
+
+                    ++count;
+
+                    if (count == 2) {
+                        System.out.println(PasswordUlills.genPass());
+                        break;
+                    }
+
+
+                }
+                while (count !=0);
         }
 
 

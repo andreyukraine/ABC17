@@ -1,5 +1,7 @@
 package Homework.home3;
 
+import java.util.Random;
+
 /**
  * Created by IT on 13.07.2016.
  */
@@ -15,32 +17,34 @@ public class PasswordUlills {
     // - в пароле должны быть как маленькие так и большие буквы
     public static boolean toUperCase(String password){
         String lowCase = password.toLowerCase();
-        if (password.equals(lowCase)){
-            return false;
-        }
-        return true;
+        return password.equals(lowCase)? false : true;
     }
 
     // - должны быть цифры
     public static boolean numberPassword(String password){
-        if (password.matches("^[^0-9]*$")){
-            return false;
-        }
-        return true;
+        return password.matches("^[^0-9]*$")? false : true;
     }
 
     // - не должен содержать слов 'password', 'pass', 'gfhjkm'
     public static boolean toContaineWord(String password){
-        if (password.contains("password") || password.contains("pass") || password.contains("gfhjkm")){
-            return false;
-        }
-        return true;
+        return password.contains("password") || password.contains("pass") || password.contains("gfhjkm")? false : true;
     }
 
     // - генерировать случайный пароль используя символы: a-z A-Z 0-9
     public static String genPass(){
-        String line = "abcdefg";
-        return null;
+        String line = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPRSTUVWXYZ0123456789";
+
+        char[] symbol = line.toCharArray();
+        String genPass = "";
+
+        for (int i = 0; i < symbol.length ; i++) {
+            if (i < 10) {
+                genPass += line.charAt(new Random().nextInt(line.length()));
+            }
+        }
+
+        return genPass;
     }
+
 
 }
