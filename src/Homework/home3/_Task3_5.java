@@ -20,14 +20,16 @@ public class _Task3_5 {
 
         int sum = 0;
         int sum2 = 0;
-
+        int min = 0;
 
         for (int i = 0; i < mass.length ; i++ ) {
             for (int j = 0; j < mass[i].length; j++) {
-
+                sum += mass[i][j];
+                min = sum;
             }
 
         }
+        System.out.println(min);
 
         System.out.println(sum);
         System.out.println(sum2);
