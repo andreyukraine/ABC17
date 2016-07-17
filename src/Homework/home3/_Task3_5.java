@@ -13,28 +13,24 @@ public class _Task3_5 {
     public static void main(String[] args) {
         int[][] mass = {
                 {1,3},
-                {2,1}
+                {2,5}
         };
-
-        int[][] newmass = new int[2][2];
-
-        int sum = 0;
-        int sum2 = 0;
-        int min = 0;
+        int temp = 0;
 
         for (int i = 0; i < mass.length ; i++ ) {
+            int sum = 0;
             for (int j = 0; j < mass[i].length; j++) {
                 sum += mass[i][j];
-                min = sum;
+//                    if (sum > temp) {
+//                        mass[j][0] = mass[i][j];
+//                    }
             }
+            temp = sum;
+
+            System.out.println(sum);
 
         }
-        System.out.println(min);
 
-        System.out.println(sum);
-        System.out.println(sum2);
-
-        System.out.println(MatrixUtillsHome.MatrixtoString(newmass));
     }
 
 
